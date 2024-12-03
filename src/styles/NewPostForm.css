@@ -1,0 +1,152 @@
+/* Загальний стиль для форми */
+form {
+    margin-top: 60px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e5e5e5;
+}
+
+/* Стиль для нової публікації */
+.new-post-form {
+    min-width: 800px;
+    margin-top: 90px;
+}
+
+/* Заголовок форми */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #e2d83d;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Відступи між полями */
+.all-new-post-page.div {
+    margin-bottom: 20px;
+}
+
+/* Стиль для міток */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #e2d83d;
+}
+
+/* Стиль для полів введення */
+.new-post-input[type="text"],
+.new-post-area,
+.new-post-select {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1em;
+    background-color: #f8fafc;
+    color: #333;
+}
+
+/* Стиль для textarea */
+textarea {
+    height: 180px;
+    resize: vertical;
+}
+
+/* Стиль для кнопки */
+.new-post-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0056a6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+/* Зміна кольору та ефект при наведенні */
+.new-post-button:hover {
+    background-color: #003e7c;
+    transform: scale(1.02);
+}
+
+/* Стиль для селектора категорій */
+.new-post-select {
+    margin-bottom: 20px;
+    height: 200px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    padding: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #ccc;
+    color: #333;
+    margin-top: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* При наведенні на селектор */
+.new-post-select:hover {
+    border-color: #0056a6;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Стиль для компонентів категорій всередині селектора */
+.categories-options {
+    padding: 10px;
+    background-color: #fefefe;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+}
+
+/* Ефект при наведенні на категорію */
+.categories-options:hover {
+    background-color: #e6f0ff;
+    color: #0056a6;
+}
+
+/* Активна категорія */
+.categories-options.active {
+    background-color: #cce0ff;
+    font-weight: bold;
+    color: #003e7c;
+}
+
+/* Стиль для фотографій (input[type="file"]) */
+input[type="file"] {
+    margin-top: 12px;
+    padding: 10px;
+    background-color: #f8fafc;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+/* Додаткові стилі для повідомлень */
+.toast-container {
+    font-size: 1.2em;
+    color: #333;
+    background-color: #fef3f3;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #f5c6cb;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для області поста */
+.new-post-area {
+    max-width: 600px;
+}

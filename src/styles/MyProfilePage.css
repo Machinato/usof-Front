@@ -1,0 +1,244 @@
+.profile-page {
+    margin-top: 50px;
+    padding: 40px;
+    width: 100%;
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 30px; */
+}
+
+.avatar-profile-info{
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 30px; */
+    flex-direction: row;
+}
+
+.my-pofile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.my-pofile-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.profile-settings-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.profile-posts-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.profile-settings-btn:hover {
+    background-color: #0056b3;
+}
+
+.profile-actions {
+    margin-top: 10px;
+    /* margin: 5px; */
+    /* padding: 5px; */
+}
+
+.favorites-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.favorites-btn:hover {
+    background-color: #218838;
+}
+
+.user-comments,
+.user-posts {
+    margin-top: 30px;
+}
+
+.post-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.post-actions {
+    margin-top: 10px;
+}
+
+.post-actions button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.favorite-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.favorite-btn:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.edit-post-actions button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-post-actions button:hover {
+    background-color: #0056b3;
+}
+
+.own-posts {
+    transition: all 0.5s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.favorite-posts {
+    transition: all 0.5s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.own-posts.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.favorite-posts.hidden{
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.comm-container,
+.post-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.comm-menu,
+.post-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 6px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.hide-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.menu-btn:hover {
+    opacity: 0.8;
+}
+
+.menu-img{
+    max-width:24px;
+    max-height: auto;
+}
+

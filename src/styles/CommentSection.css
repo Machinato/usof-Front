@@ -1,0 +1,242 @@
+.comment-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #e2d83d;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.main-comm-part {
+    background-color: #0e7420;
+    border-radius: 10px;
+    padding: 30px;
+    border: 2px solid rgba(226, 216, 61, 0.5);
+}
+
+.comment-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #0e7420;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0e7420;
+    border-radius: 8px;
+    background-color: #f3f9f3;
+}
+
+.comment-author {
+    font-weight: bold;
+    font-size: 14px;
+    color: #0e7420;
+}
+
+.comment-content {
+    font-size: 16px;
+    color: #084f14;
+    line-height: 1.4;
+}
+
+.comment-date {
+    font-size: 12px;
+    color: #777777;
+    margin-top: -5px;
+}
+
+.comment-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.comment-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #0e7420;
+}
+
+.comment-actions button:hover {
+    color: #e2d83d;
+}
+
+.comment-actions img {
+    width: 18px;
+    height: 18px;
+}
+
+.reply-section {
+    margin-left: 30px;
+    padding-left: 10px;
+    border-left: 2px solid #e2d83d;
+    margin-top: 10px;
+}
+
+.reply-section .comment {
+    background-color: #ffffff;
+}
+
+.new-comment-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.new-comment-form textarea {
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid #0e7420;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+    background-color: #f9fff9;
+}
+
+.new-comment-form textarea:focus {
+    outline: none;
+    border-color: #e2d83d;
+}
+
+.new-comment-form button {
+    align-self: flex-end;
+    background-color: #0e7420;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.new-comment-form button:hover {
+    background-color: #084f14;
+}
+
+@media (max-width: 768px) {
+    .comment-section {
+        padding: 15px;
+    }
+
+    .comment {
+        padding: 8px;
+    }
+
+    .new-comment-form textarea {
+        min-height: 60px;
+    }
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #0e7420;
+    padding-bottom: 12px;
+}
+
+.author-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-name {
+    font-weight: bold;
+    margin: 0;
+    color: #0e7420;
+}
+
+.comm-date {
+    font-size: 12px;
+    color: #777777;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+.login-date-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comm-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    border: 2px solid #e2d83d;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.avatar-container-comm {
+    background-color: #0e7420;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comm-content {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    color: #0e7420;
+}
+
+.avatar-login-comm {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.view-replies-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #0e7420;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.view-replies-button:hover {
+    text-decoration: underline;
+}
+
+.comm-likes {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.like-button {
+    padding-left: 5px;
+    padding-right: 5px;
+}

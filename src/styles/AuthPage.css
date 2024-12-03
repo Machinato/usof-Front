@@ -1,0 +1,11 @@
+.all-Page{
+    padding-top:  70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-input{
+    background-color: #158133;
+}

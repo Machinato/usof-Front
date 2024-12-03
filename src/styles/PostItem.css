@@ -1,0 +1,275 @@
+/* h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px #28390a;
+} */
+
+.post-preview {
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 35px;
+    background: #fff;
+    overflow: hidden;
+    marker-end: 50px;
+}
+
+.particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: radial-gradient(circle, #ffcc00, transparent);
+    border-radius: 50%;
+    animation: flyAway 1s ease-out forwards;
+}
+
+.post-header {
+    /* padding: 16px; */
+    display: flex;
+    align-items: center;
+    /* border-radius: 8px; */
+    transition: all 0.3s ease;
+    border-bottom: 3px solid;
+    padding-bottom: 12px;
+}
+
+/* .author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+} */
+.avatar-container {
+    margin-right: 20px;
+    background-color: #444;
+    /* Колір фону для перевірки меж */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Ховає частини зображення, що виходять за межі кола */
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* Центрує зображення у випадку зміщення */
+}
+
+.author-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Забезпечує обрізання зображення з збереженням пропорцій */
+}
+
+.author-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.post-date {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.post-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.post-content {
+    font-size: 16px;
+    margin-bottom: 8px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.post-categories,
+.post-likes {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-top: 12px;
+}
+
+.LikesOnPost {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+.favorite-button,
+.like-button,
+.dislike-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+}
+
+.like-button:hover,
+.dislike-button:hover {
+    color: #000;
+}
+
+.like-button span,
+.dislike-button span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 25px 10px rgba(255, 215, 0, 0.9);
+    }
+
+    100% {
+        box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.5);
+    }
+}
+
+@keyframes flyAway {
+    0% {
+        opacity: 1;
+        transform: scale(1) translate(0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.5) translate(calc(100px - 50%),
+                calc(100px - 50%));
+    }
+}
+
+.likes-and_Categories {
+
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mini-img{
+    width: 70px;
+    height: auto;
+    object-fit: cover;
+    margin: 3px;
+}
+
+.mini-img-container{
+    background-color: #444;
+    /* Колір фону для перевірки меж */
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 10%;
+    overflow: hidden;
+    /* Ховає частини зображення, що виходять за межі кола */
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* Центрує зображення у випадку зміщення */
+    justify-content: start;
+    flex-direction: row;
+    margin: 2px;
+}
+
+.post-mini-photos{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    margin: px;
+}
+
+.mini-img-container.more-photos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Напівпрозорий чорний фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer; /* Вказує, що кліком можна закрити */
+    flex-direction: column;
+}
+
+.close-icon{
+    max-width: 10%;
+    max-height: auto;
+    background-color: #00000000;
+    color: #00000000;
+}
+
+/* .button-close-img{
+    padding-top: 20px;
+    background-color: #00000000;
+    color: #00000000;
+    box-shadow: 0 0 0 0 ;
+    border: #00000000;
+} */
+
+.favorite-icon,
+.like-icon,
+.dislike-icon {
+    width: 35px;
+    height: auto;
+    transition: filter 0.3s ease;
+    fill: green;
+}
+
+.favorite-icon.selected,
+.like-icon.selected {
+    filter: invert(1) sepia(1) saturate(10000%) hue-rotate(150deg);
+}
+
+.dislike-icon.selected {
+    filter: invert(1) sepia(1) saturate(10000%) hue-rotate(150deg);
+}

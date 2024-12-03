@@ -1,0 +1,231 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+#root{
+    align-items: start !important;
+}
+
+.infinite-scroll-component {
+    padding: 10px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.headerItem {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #0e7420;
+    z-index: 1000;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.all-Page-Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.mainPage {
+    position: relative;
+    padding-top: 80px;
+    width: 100%;
+    max-width: 1200px !important;
+    margin: 0 auto;
+    padding: 40px !important;
+    background-color: #841010 !important;
+    color: #841010 !important;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow:hidden;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+}
+
+.mainPage .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    margin: 50px;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.posts {
+    margin: 20px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.post-title {
+    position: flex;
+    text-align:start;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #0e7420;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post:hover {
+    transform: scale(0.98);
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 5px;
+}
+
+.post-content {
+    font-size: 1rem;
+    color: #666;
+}
+
+.load-more-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0e7420;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background-color: #3c5b0d;
+}
+
+.error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    border-color: #0057b300;
+    background: linear-gradient(145deg, #32490c, #0e7420);
+    box-shadow: 2px 2px 4px #28390a, -4px -4px 8px #56710e;
+}
+
+.input-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-search input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+.input-search button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #e2d83d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-search button:hover {
+    background-color: #c1b41c;
+}
+
+.toggle-filters-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-filters-btn:hover {
+    background-color: #eaeaea;
+}
+
+.filters-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filters-dropdown.visible {
+    max-height: 500px;
+    opacity: 1;
+}
+
+select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+select:hover {
+    border-color: #007bff;
+}
+
+.main-page {
+    
+}

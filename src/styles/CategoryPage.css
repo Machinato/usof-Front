@@ -1,0 +1,46 @@
+.category-page {
+    margin: 50px;
+    width: 80%;
+}
+
+.category-info {
+    background-color: #e2d83d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.category-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0e7420;
+}
+
+.category-info p {
+    font-size: 1rem;
+    color: #084f14;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 5px rgba(14, 116, 32, 0.2);
+}
+
+.post-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0e7420;
+}
+
+.post-item p {
+    font-size: 1rem;
+    color: #084f14;
+}

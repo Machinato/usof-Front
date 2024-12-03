@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: visible;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.App {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #0e7420;
+    margin: 10px;
+}
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border: 2px solid #0e7420;
+    border-radius: 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 10;
+    color: #0e7420;
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+}
+
+.AuthLogo {
+    width: 300px;
+    padding-bottom: 50px;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+body {
+    padding-top: 80px;
+    font-family: Arial, sans-serif;
+    background-color: #0e7420;
+    color: #e2d83d;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background: linear-gradient(145deg, #0c6020, #158133);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #094d1a, -4px -4px 8px #1c8a2b;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px #094d1a;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 5px #094d1a, inset -2px -2px 5px #1c8a2b;
+    background-color: #158133;
+    color: #e2d83d;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #c7b73a;
+}
+
+.MyButton {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e2d83d;
+    color: #0e7420;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #094d1a, -2px -2px 5px #1c8a2b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.MyButton:hover {
+    background-color: #c7b73a;
+    box-shadow: 4px 4px 8px #094d1a, -4px -4px 8px #1c8a2b;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #e2d83d;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #094d1a;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #c7b73a;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: #0e7420;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

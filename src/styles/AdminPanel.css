@@ -1,0 +1,190 @@
+.admin-panel {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #e2d83d;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #0e7420;
+}
+
+.tab-btn.active {
+    background-color: #0e7420;
+    color: #fff;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #0e7420;
+}
+
+th {
+    background-color: #e2d83d;
+    color: #0e7420;
+}
+
+td {
+    color: #333; /* Текст комірок */
+}
+
+.admin-panel-button {
+    background-color: #0e7420;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.admin-panel-button:hover {
+    background-color: #084f14;
+}
+
+.modal-admin-panel {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 116, 32, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-admin-panel form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.modal-admin-panel input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #0e7420;
+}
+
+.modal-admin-panel button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #0e7420;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.modal-comment {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(14, 116, 32, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-comment {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.modal-actions-comment {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+textarea-comment {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #0e7420;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #0e7420;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #084f14;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.posts-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.posts-table th, .posts-table td {
+    border: 1px solid #0e7420;
+    padding: 8px;
+    text-align: center;
+}
+
+.posts-table th {
+    background-color: #e2d83d;
+    color: #0e7420;
+}
+
+.modal-post {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(14, 116, 32, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.modal-actions-post {
+    display: flex;
+    justify-content: space-between;
+}
